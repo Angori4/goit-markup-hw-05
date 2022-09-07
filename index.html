@@ -29,7 +29,7 @@
             <span class="accent">Web</span>Studio</a
           >
           <ul class="navigation-list">
-            <li class="navigation-list-item">
+            <li class="navigation-list-item accent-line">
               <a class="accent-navigation navigation-link" href="./index.html">Студія</a>
             </li>
             <li class="navigation-list-item">
@@ -65,7 +65,7 @@
       <section class="hiro-section">
         <div class="container">
           <h1 class="hiro-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hiro-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hiro-button">Замовити послугу</button>
         </div>
       </section>
 
@@ -124,31 +124,27 @@
           <h2 class="caption">Чим ми займаємось</h2>
           <ul class="list">
             <li class="list-item">
-              <img
-                class="img"
-                src="./images/box1.png"
-                alt="keyboard-and-tablet"
-                width="370"
-                height="295"
-              />
+              <div class="working-position">
+                <img class="img" src="./images/box1.png" alt="keyboard-and-tablet" width="370" />
+                <h3 class="working-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                class="img"
-                src="./images/box2.png"
-                alt="phone-and-laptop"
-                width="370"
-                height="295"
-              />
+              <div class="working-position">
+                <img class="img" src="./images/box2.png" alt="phone-and-laptop" width="370" />
+                <h3 class="working-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                class="img"
-                src="./images/box3.png"
-                alt="a-pen-and-a-tablet-with-a-picture"
-                width="370"
-                height="295"
-              />
+              <div class="working-position">
+                <img
+                  class="img"
+                  src="./images/box3.png"
+                  alt="a-pen-and-a-tablet-with-a-picture"
+                  width="370"
+                />
+                <h3 class="working-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -439,5 +435,16 @@
         </div>
       </div>
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-button">
+          <svg width="18px" height="18px" class="modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
