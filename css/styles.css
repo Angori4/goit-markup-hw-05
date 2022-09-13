@@ -44,6 +44,7 @@ ul {
 
 
 .container {
+    padding: 0 15px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -409,7 +410,7 @@ ul {
 }
 
 .advantage .list-item {
-    width: 25%;
+    flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .working-position {
@@ -496,7 +497,7 @@ ul {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .advantage .title {
