@@ -711,3 +711,191 @@ ul {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.modal-button:hover,
+.modal-button:focus {
+    fill: var(--accent-color);
+}
+
+.form-title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    padding-top: 40px;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.form-position {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.label {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    /* color: #757575; */
+    display: flex;
+    flex-direction: column;
+}
+
+.label-input {
+    display: inline-block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    outline: none;
+    margin-top: 4px;
+    transition: border 250ms var(--cubic-bezier);
+}
+
+.label:focus-within .form-icon {
+    fill: var(--accent-color);
+}
+
+.label:focus-within .label-input,
+.label:focus-within .form-textarea {
+    border: 1px solid var(--accent-color);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill 250ms var(--cubic-bezier);
+}
+
+.form-textarea {
+    resize: none;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    margin-top: 4px;
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.input-checkbox {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.icon-checkbox {
+    display: inline-block;
+    background-image: url("../images/no-check.svg");
+    width: 16px;
+    height: 15px;
+    transition: background-image 250ms var(--cubic-bezier);
+}
+
+.input-checkbox:checked~.icon-checkbox {
+    background-image: url("../images/check.svg");
+}
+
+    .form-link {
+        text-decoration: none;
+        color: var(--accent-color);
+        border-bottom: 1px solid var(--accent-color);
+    }
+
+    .form-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        background-color: #2196f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        transition: background-color 250ms var(--cubic-bezier);
+    }
+
+    .form-btn:hover,
+    .form-btn:focus {
+        background-color: var(--hiro-button-hover);
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .footer-input {
+        width: 358px;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: var(--footer-bgc-color);
+        font-size: 16px;
+        line-height: 1.25;
+        border: 1px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        outline: none;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+
+    .footer-form-btn {
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        fill: var(--white-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 4px;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+    }
