@@ -563,8 +563,15 @@ ul {
 
 .footer-flexbox {
     display: flex;
-    gap: 70px;
     align-items: baseline;
+}
+
+.footer-flex-adress {
+    margin-right: 70px;
+}
+
+.footer-flex-icon {
+    margin-right: auto;
 }
 
 .footer-list-icon {
@@ -724,9 +731,7 @@ ul {
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
-    padding-top: 40px;
     margin-bottom: 12px;
 }
 
